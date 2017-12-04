@@ -10,6 +10,6 @@ setup(
     keywords=['rss', 'feed', 'aws', 'dynamodb'],
     classifiers=[],
     packages=['pychime'],
-    install_requires=['requests', 'json'],
+    install_requires=['requests'],
     python_requires='>=3',
 )
