@@ -4,7 +4,7 @@ pyChime makes it easy to post messages to Amazon Chime Chat Rooms using the Webh
 
 ## Sample Usage
 
-At the moment Chime support sending messages.
+At the moment Chime supports sending messages.
 
 ```
 from pychime import Chime, ChimeException
