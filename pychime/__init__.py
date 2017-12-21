@@ -44,3 +44,15 @@ class Chime():
             return True
         else:
             raise ChimeException(req.status_code)
+
+    def post_all(self, message):
+        """
+        Post message to @All
+        """
+        self.post("@All " + message)
+
+    def post_present(self, message):
+        """
+        Post message to @Present
+        """
+        self.post("@Present " + message)
