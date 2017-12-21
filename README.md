@@ -9,7 +9,7 @@ At the moment Chime supports sending messages.
 ```
 from pychime import Chime, ChimeException
 
-content = 'Hello World"
+content = "Hello World"
 webhook = "https://hooks.chime.aws/incomingwebhooks/" \
         + "some_webhook_id_here" \
         + "?token=some_token_here",
@@ -18,6 +18,12 @@ chime = Chime(webhook)
 
 try:
     chime.post(content)
+
+    # notify present members
+    chime.post_present(content)
+
+    # notify all members
+    chime.post_all(content)
 except ChimeException as err:
     print('Error Code: {}, Error Message: {}'.format(err.code, err.message))
 
