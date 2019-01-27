@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='pychime',
-    version='0.1.1',
+    version='0.2.0',
     description='A library to use Amazon Chime Web Hooks',
     author='Oz Akan',
     author_email='code@akan.me',
